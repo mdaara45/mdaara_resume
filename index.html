@@ -6,7 +6,6 @@
 <title>Marilou Daara Webpage</title>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
 <style>
   body {
     margin: 0; /* Remove default margin */
@@ -18,99 +17,84 @@
     display: flex; /* Use flexbox for centering content */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
+    color: whitesmoke;
   }
   .container {
-            text-align: left;
-            margin-top: 50px;
-            padding-left: 50px; /* Adjust the padding as needed */
-        }
-
-        .image-container {
-            display: inline-block;
-        }
-
-        .image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        .text-head {
-            margin-top: 15px;
-            font-size: 50px;
-          
-        }
-        .text {
-            margin-top: 15px;
-            font-size: 25px;
-            color: whitesmoke;
-            padding-left: 6px; /* Adjust the padding to match the container */
-        }
-        .text2 {
-            margin-top: 15px;
-            font-size: 25px;
-            font-style: italic;
-            color: whitesmoke;
-            padding-left: 6px; /* Adjust the padding to match the container */
-        }
-
-        .text3 {
-            margin-top: 15px;
-            font-size: 15px;
-            font-style: normal;
-            color: #333;
-            /* padding-left: 30px; /* Adjust the padding to match the container */
-        }
-        .center-button1 {
-            position: absolute;
-            top: 65%;
-            left: 56%;
-        }
-        .center-button2 {
-            position: absolute;
-            top: 65%;
-            left: 64%;
-        }
-        .center-button3 {
-            position: absolute;
-            top: 65%;
-            left: 74%;
-        }
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: Add background shade for better readability */
+    border-radius: 10px;
+  }
+  .text-head {
+    font-size: 2.5em;
+  }
+  .text, .text2, .text3 {
+    font-size: 1.2em;
+  }
+  .text2 {
+    font-style: italic;
+  }
+  .text3 {
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  .btn-container {
+    margin-top: 20px;
+  }
+  .btn {
+    margin: 10px;
+  }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+    .social-btn img {
+    width: 100px; /* Set a fixed width for the social media icons */
+    height: 40px; /* Set a fixed height for the social media icons */
+  }
 </style>
+</head>
 <body>
+    
   <div class="container">
-    <div class="text-head">
-    <h1>Welcome to my Website!</h1>
-    <br>
-    <div class="image-container">
-             <img src="Marilou_Pic2.jpg" class="rounded" alt="Profile Picture" style="max-width: 300px;">
-                <div class="text">
-             <h1>Marilou Daara</h1>
-             <h4>Cybersecurity Professional</h4>
-      </div>       
+    <div class="row align-items-center">
+      <div class="col-md-4">
+        <div class="image-container">
+          <img src="Marilou_Pic2.jpg" class="rounded" alt="Profile Picture">
+          <div class="text">
+            <h2>Marilou Daara</h2>
+            <h4>Cybersecurity Professional</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="text-head">
+            <h1>Welcome to my Website!</h1>
+          </div>
+        <div class="text2 my-3">
+            <br>
+          <p>“Leveraging a robust background in healthcare, I am now channeling my passion for protecting 
+            sensitive information into the realm of cybersecurity. With a keen understanding of confidentiality from my 
+            healthcare experience, I am ready to safeguard digital landscapes. Let’s fortify your cyber walls together!”</p>
+        </div>
+        <div class="text3">
+          <p>** Background image courtesy of Pixabay.com and Artist Vishnu_KV.</p>
+        </div>
+        <div class="btn-container">
+          <!-- View Resume Button -->
+          <a href="MDaara_Resume.pdf" target="_blank" class="btn btn-primary">View Resume</a>
+          <!-- Download Resume Button -->
+          <a href="MDaara_Resume.pdf" download class="btn btn-secondary">Download Resume</a>
+          <!-- Email Button -->
+          <a href="mailto:mariloudaara@gmail.com" class="btn btn-info">Email Me</a>
+           <!-- LinkedIn Button -->
+           <a href="https://www.linkedin.com/in/mariloudaara" target="_blank" class="btn social-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn">
+           </a>
+        </div>
+      </div>
     </div>
-    <div class="text2">    
-    <p>“Leveraging a robust background in healthcare, I am now channeling my passion for protecting 
-      sensitive information into the realm of cybersecurity. With a keen understanding of confidentiality from my 
-      healthcare experience, I am ready to safeguard digital landscapes. Let’s fortify your cyber walls together!”</p>
-       <div class="text3"> 
-      <p>
-        Background image courtesy of Pixabay.com and Artist Vishnu_KV.
-      </p>
-      </div>
-      </div>
   </div>
-  </div>
-  <!-- View Resume Button -->
-  <br>
-  <br>
-  <a href="MDaara_Resume.pdf" target="_blank" class="btn btn-primary center-button1">View Resume</a>
-  <!-- Download Resume Button -->
-  <a href="MDaara_Resume.pdf" download class="btn btn-secondary center-button2">Download Resume</a>
-  <!-- Email Button -->
-  <a href="mailto:mariloudaara@gmail.com" class="btn btn-info center-button3">Email Me</a>
- </div>  
-</div>
-</div>
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
